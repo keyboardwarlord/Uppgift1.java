@@ -1,12 +1,19 @@
-import javax.swing.*;
+public class Snake implements Animal {
 
-public class Snake extends Animal {
+    String name;
+    double weight;
 
     public Snake(String name, double weight) {
-        super(name, weight);
+        this.name = name;
+        this.weight = weight;
     }
 
-    public void feed(){
-        JOptionPane.showMessageDialog(null, "Give the snake 20 grams of snake pellets");
+    public String getName() {
+        return (this.name);
+    }
+
+    @Override
+    public double feed() {
+        return (20);
     }
 }

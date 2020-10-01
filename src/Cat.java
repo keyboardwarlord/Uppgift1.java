@@ -1,12 +1,18 @@
-import javax.swing.*;
+public class Cat implements Animal {
 
-public class Cat extends Animal {
+    String name;
+    double weight;
 
     public Cat(String name, double weight) {
-        super(name, weight);
+        this.name = name;
+        this.weight = weight;
     }
 
-    public void feed(){
-        JOptionPane.showMessageDialog(null, "Give the cat " + this.weight * 1000 / 150 + " grams of cat food");
+    public String getName() {
+        return (this.name);
+    }
+    @Override
+    public double feed(){
+        return (this.weight * 1000 / 150);
     }
 }
