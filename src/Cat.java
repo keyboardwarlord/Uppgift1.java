@@ -1,16 +1,11 @@
-public class Cat implements Animal {
+public class Cat extends Animal implements Feeder{
 
-    String name;
-    double weight;
 
     public Cat(String name, double weight) {
-        this.name = name;
-        this.weight = weight;
+        super(name, weight);
     }
 
-    public String getName() {
-        return (this.name);
-    }
+
 
     public double feed(){
         return (this.weight * 1000 / 150);

@@ -1,18 +1,11 @@
-public class Snake implements Animal {
+public class Snake extends Animal {
 
-    String name;
-    double weight;
 
     public Snake(String name, double weight) {
-        this.name = name;
-        this.weight = weight;
+        super(name, weight);
     }
 
-    public String getName() {
-        return (this.name);
-    }
 
-    @Override
     public double feed() {
         return (20);
     }
