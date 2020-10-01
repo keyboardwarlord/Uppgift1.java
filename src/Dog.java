@@ -5,6 +5,7 @@ public class Dog extends Animal {
         super(name, weight);
     }
 
+    @Override
     public double feed() {
         return (this.weight * 1000 / 100);
     }

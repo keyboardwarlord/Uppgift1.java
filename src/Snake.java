@@ -5,7 +5,7 @@ public class Snake extends Animal {
         super(name, weight);
     }
 
-
+    @Override
     public double feed() {
         return (20);
     }

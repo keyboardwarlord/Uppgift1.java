@@ -1,4 +1,5 @@
-public class Animal {
+public class Animal implements IFood {
+
     String name;
     double weight;
 
@@ -11,4 +12,7 @@ public class Animal {
         return (this.name);
     }
 
+    public double feed() {
+        return (0);
+    }
 }
