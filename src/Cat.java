@@ -11,7 +11,7 @@ public class Cat implements Animal {
     public String getName() {
         return (this.name);
     }
-    @Override
+
     public double feed(){
         return (this.weight * 1000 / 150);
     }

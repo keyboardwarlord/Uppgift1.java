@@ -16,10 +16,9 @@ public class Main {
 
         String animalToFeed = JOptionPane.showInputDialog("What animal do you want to feed");
         boolean animalFound = false;
-
         for (int i = 0; i < animals.toArray().length; i++) {
             if (animalToFeed.toLowerCase().equals(animals.get(i).getName().toLowerCase())){
-                System.out.println("Give " + animals.get(i).getName() + " " +
+                JOptionPane.showMessageDialog(null, "Give " + animals.get(i).getName() + " " +
                         animals.get(i).feed() +  " grams of " +
                         animals.get(i).getClass().getName().toLowerCase() + " food");
                 animalFound = true;
@@ -28,7 +27,7 @@ public class Main {
                 break;
             }
             else if (i == animals.toArray().length-1){
-                System.out.println("Animal not found");
+                JOptionPane.showMessageDialog(null, "Animal not found");
             }
         }
 
